@@ -7,11 +7,6 @@ packer {
   }
 }
 
-// NOTE:
-// - In a single packer file more than one images can be built. Such as build for AWS, azure, GCP together
-// - Define the separate plugin for amazon, azure, googlecompute under "required_plugins" for building multiple cloud images
-// - Define separate sources
-// - Under build add all sources in "sources []" list. 
 
 
 source "amazon-ebs" "ubuntu" {
