@@ -7,6 +7,13 @@ packer {
   }
 }
 
+// NOTE:
+// - In a single packer file more than one images can be built. Such as build for AWS, azure, GCP together
+// - Define the separate plugin for amazon, azure, googlecompute under "required_plugins" for building multiple cloud images
+// - Define separate sources
+// - Under build add all sources in "sources []" list. 
+
+
 source "amazon-ebs" "ubuntu" {
   profile       = "e2esaprofile"
   ami_name      = "e2esa-aws-ubuntu-golden"
@@ -16,8 +23,6 @@ source "amazon-ebs" "ubuntu" {
   ssh_username  = "ubuntu"
 }
 
-
-# because you defined source "amazon-ebs" "ubuntu" 
 
 build {
   name = "e2esa-packer-build"
