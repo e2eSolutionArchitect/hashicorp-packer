@@ -26,3 +26,5 @@ packer build <filename>.pkr.hcl
 ```
 
 Check your cloud portal under. It will create a VM in few mins. 
+For AWS it will create an EC2 instance
+Also check the AMI option. It will show a new AMI created. 
