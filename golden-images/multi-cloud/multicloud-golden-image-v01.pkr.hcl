@@ -1,4 +1,5 @@
 packer {
+  required_version = ">= 1.7.2"
   required_plugins {
     amazon = {
       version = ">= 1.2.6"
@@ -12,8 +13,18 @@ packer {
       version = ">= 1.1.1"
       source  = "github.com/hashicorp/googlecompute"
     }
+    windows-update = {
+      version = "0.14.3"
+      source  = "github.com/rgl/windows-update"
+    }
+    docker = {
+      version = "1.0.8"
+      source  = "github.com/hashicorp/docker"
+    }    
   }
 }
+
+
 
 // NOTE:
 // - In a single packer file more than one images can be built. Such as build for AWS, azure, GCP together
