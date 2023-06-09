@@ -34,3 +34,18 @@ Also check the AMI option. It will show a new AMI created.
 #### To delete the AMI
 - Deregister the AMI
 - Delete the Snapshot (deregistering the AMI doesn't delete the snapshot automatically. It needs to be done separately)
+
+## Create a resource group 
+```
+az group create -n myResourceGroup -l eastus 
+```
+
+## Create a service principal 
+```
+az ad sp create-for-rbac --query "{ client_id: appId, client_secret: password, tenant_id: tenant }" 
+```
+
+## Obtain your Azure subscription ID
+```
+az account show --query "{ subscription_id: id }"
+```
