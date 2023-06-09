@@ -1,5 +1,6 @@
 
-## Error: Failure responding to request: StatusCode=403 -- Original Error: autorest/azure: Service returned an error. Status=403 Code="AuthorizationFailed" Message="The client '####-####-#####-#####' with object id '####-####-#####-#####' does not have authorization to perform action 'Microsoft.Storage/storageAccounts/listKeys/action' over scope '/subscriptions/####-####-#####-#####/resourceGroups/<resource-group-name>/providers/Microsoft.Storage/storageAccounts/<storage account name>' or the scope is invalid. If access was recently granted, please refresh your credentials."
+## Error: 
+Failure responding to request: StatusCode=403 -- Original Error: autorest/azure: Service returned an error. Status=403 Code="AuthorizationFailed" Message="The client '####-####-#####-#####' with object id '####-####-#####-#####' does not have authorization to perform action 'Microsoft.Storage/storageAccounts/listKeys/action' over scope '/subscriptions/####-####-#####-#####/resourceGroups/<resource-group-name>/providers/Microsoft.Storage/storageAccounts/<storage account name>' or the scope is invalid. If access was recently granted, please refresh your credentials."
   ```
 Resolution: 
 The error is not related to the user but to the application. It is related to the role assignment to the subscription for the application your have created for packer. 
