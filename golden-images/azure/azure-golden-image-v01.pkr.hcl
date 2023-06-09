@@ -8,10 +8,10 @@ packer {
 }
 
 source "azure-arm" "ubuntu" {
-  client_id           = "c13cc349-754a-4e1c-894f-d00be091cd45"
-  subscription_id = "bf793555-a4bc-42e3-a520-49d84c859f19"
-  client_secret = "RDq8Q~Oo7keC4PYM1a1K__zxW6GpFbFgNZz-Mbz5"
-  tenant_id = "28c0a11c-225f-40f5-bb91-6f1290662752"
+  client_id           = "####-####-####-####-####"
+  subscription_id = "####-####-####-####-####"
+  client_secret = "####-####-####-####-####"
+  tenant_id = "####-####-####-####-####"
 
   resource_group_name = "packer-demo"
   storage_account     = "e2esapackerimages"
