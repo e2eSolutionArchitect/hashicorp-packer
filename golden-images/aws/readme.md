@@ -1,6 +1,6 @@
 ## Setup AWS CLI [click here](https://github.com/e2eSolutionArchitect/KEDB/blob/main/aws/install-aws-cli.md)
 
-## Configure AWS credentials
+## Configure AWS credentials [click here](https://github.com/e2eSolutionArchitect/scripts/blob/main/aws/ec2/aws-configure.md)
 
 ## Install Packer
 
