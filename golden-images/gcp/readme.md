@@ -29,3 +29,6 @@ packer build -var-file="values.pkrvars.hcl" .
 - Login to Google Cloud Platform 
 - Go to 'Computer Engine' > Images (under Storage menu)
 - If you have not specified image name then by default the packer image name is "packer-<timestamp>". e.g, packer-168972376. 
+  
+## Quick Referances:
+  - GCP Packer Builder [click here](https://developer.hashicorp.com/packer/plugins/builders/googlecompute)
