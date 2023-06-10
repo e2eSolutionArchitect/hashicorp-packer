@@ -1,5 +1,20 @@
-# hashicorp-packer
-hashicorp-packer
+### For Terraform professional consultancy and Technical advisory please feel free to drop a note to som@e2eSolutionArchitect.com
+[Click here](https://e2esolutionarchitect.com/tag/terraform) for Terraform articles
+
+[![e2esa-bootcamp-posters-01](https://github.com/e2eSolutionArchitect/terraform/assets/62712515/485d9a63-da4b-4308-853d-cca3a5334e89)](https://e2esolutionarchitect.eventbrite.ca)
+
+
+***[Click here](https://e2esolutionarchitect.eventbrite.com)*** for list of upcoming trainings.
+
+### Join the ***Slack*** channel 
+ - [Terraform Infrastructure Automation Engineering](https://talentdevelop-u8d3237.slack.com/archives/C04KCD8183B)
+
+## [HashiCorp Certified: Terraform Associate (002)](https://github.com/e2eSolutionArchitect/academy/blob/main/certification-based-training-programs/terraform/terraform-associate-002.md): Certification focused Training Program by ['e2e Solution Architect'](https://e2esolutionarchitect.com/role-based-training-program/)
+
+## A New Version of HashiCorp Infrastructure Automation Certification Is Coming Soon. [HashiCorp Certified: Terraform Associate (003)](https://github.com/e2eSolutionArchitect/academy/blob/main/certification-based-training-programs/terraform/terraform-associate-003.md)
+
+## e2eSA Online Video Tutorials [Click here](https://www.youtube.com/channel/UC5Juuk7aTvbRmrABMq4onJA/videos)
+
 
 Hashicorp Cloud Platform (HCP) [click here](https://www.hashicorp.com/cloud)
 
