@@ -15,7 +15,7 @@ packer init .
 packer validate .
 
 # Build
-packer build 
+packer build .
 
 ```
 
