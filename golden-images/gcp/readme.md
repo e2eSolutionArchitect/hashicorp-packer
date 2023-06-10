@@ -24,3 +24,8 @@ gcloud auth application-default login
 ```
 packer build -var-file="values.pkrvars.hcl" .
 ```
+
+# Where to check after the image has been created?
+- Login to Google Cloud Platform 
+- Go to 'Computer Engine' > Images (under Storage menu)
+- If you have not specified image name then by default the packer image name is "packer-<timestamp>". e.g, packer-168972376. 
