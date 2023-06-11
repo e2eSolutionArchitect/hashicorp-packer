@@ -1,27 +1,32 @@
+
+# Common
 variable profile {
   type        = string
   description = "aws profile name"
 }
-variable ami_name {
-  type = string
-}
-variable instance_type1 {
-  type = string
-}
-variable region1 {
-  type = string
-}
-
-variable source_ami {
-  type = string
-  validation {
-    condition     = length(var.source_ami) > 4 && substr(var.source_ami, 0, 4) == "ami-"
-    error_message = "The image_version value must be a valid source_ami, starting with \"ami-\"."
-  }
-}
 variable ssh_username {
   type = string
 }
+variable instance {
+  type = string
+}
+variable region {
+  type = string
+}
+
+# Ubuntu 
+
+variable ami_name_ubuntu {
+  type = string
+}
+variable source_ami_ubuntu {
+  type = string
+  validation {
+    condition     = length(var.source_ami_ubuntu) > 4 && substr(var.source_ami_ubuntu, 0, 4) == "ami-"
+    error_message = "The source_ami_ubuntu value must be a valid source_ami_ubuntu, starting with \"ami-\"."
+  }
+}
+
 
 
 # RHEL
@@ -29,13 +34,6 @@ variable ssh_username {
 variable ami_name_rhel {
   type = string
 }
-variable instance_type2 {
-  type = string
-}
-variable region2 {
-  type = string
-}
-
 variable source_ami_rhel {
   type = string
   validation {
@@ -43,6 +41,16 @@ variable source_ami_rhel {
     error_message = "The source_ami_rhel value must be a valid source_ami_rhel, starting with \"ami-\"."
   }
 }
-variable ssh_username_rhel {
+
+# Windows
+
+variable ami_name_win {
   type = string
+}
+variable source_ami_win {
+  type = string
+  validation {
+    condition     = length(var.source_ami_win) > 4 && substr(var.source_ami_win, 0, 4) == "ami-"
+    error_message = "The source_ami_win value must be a valid source_ami_win, starting with \"ami-\"."
+  }
 }
