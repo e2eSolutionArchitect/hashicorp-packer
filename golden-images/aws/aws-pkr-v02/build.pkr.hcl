@@ -5,7 +5,8 @@ build {
   name = "e2esa-packer-build"
   sources = [
     "source.amazon-ebs.ubuntu",
-    "source.amazon-ebs.rhel"
+    "source.amazon-ebs.rhel",
+    "source.amazon-ebs.win"
   ]
   provisioner "shell" {
     environment_vars = [

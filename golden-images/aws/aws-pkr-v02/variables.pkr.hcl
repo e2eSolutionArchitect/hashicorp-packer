@@ -4,9 +4,7 @@ variable profile {
   type        = string
   description = "aws profile name"
 }
-variable ssh_username {
-  type = string
-}
+
 variable instance {
   type = string
 }
@@ -17,6 +15,9 @@ variable region {
 # Ubuntu 
 
 variable ami_name_ubuntu {
+  type = string
+}
+variable ssh_username_ubuntu {
   type = string
 }
 variable source_ami_ubuntu {
@@ -34,6 +35,9 @@ variable source_ami_ubuntu {
 variable ami_name_rhel {
   type = string
 }
+variable ssh_username_rhel {
+  type = string
+}
 variable source_ami_rhel {
   type = string
   validation {
@@ -45,6 +49,9 @@ variable source_ami_rhel {
 # Windows
 
 variable ami_name_win {
+  type = string
+}
+variable ssh_username_win {
   type = string
 }
 variable source_ami_win {
