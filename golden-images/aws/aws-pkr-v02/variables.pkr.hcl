@@ -47,7 +47,7 @@ variable source_ami_rhel {
 }
 
 # Windows
-
+/*
 variable ami_name_win {
   type = string
 }
@@ -64,3 +64,4 @@ variable source_ami_win {
     error_message = "The source_ami_win value must be a valid source_ami_win, starting with \"ami-\"."
   }
 }
+*/

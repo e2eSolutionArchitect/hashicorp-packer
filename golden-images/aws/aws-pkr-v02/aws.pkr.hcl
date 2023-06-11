@@ -18,6 +18,7 @@ source "amazon-ebs" "rhel" {
   ssh_username  = var.ssh_username_rhel
 }
 
+/*
 source "amazon-ebs" "win" {
   profile       = var.profile
   ami_name      = "${var.ami_name_win}-${local.timestamp}"
@@ -29,4 +30,5 @@ source "amazon-ebs" "win" {
   winrm_username = var.winrm_username
   #user_data_file = "./bootstrap_win.txt"
 }
+*/
 
