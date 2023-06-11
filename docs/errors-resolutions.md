@@ -22,5 +22,13 @@ Navigate as following instruction
   ```
   It says your storage account is not under the resource group you have mentioned. 
   ```
-
+  ----------------
+  Error:
+  apt-get not supported for RHEL. 
+  
+  Resolution:  
+  The apt-get command only works on Debian, Ubuntu, and its derivatives. If you are trying to install rpm-based operating systems such as Fedora, RHEL and CentOS, the command will not work. As a result, you will receive the error.
+  ----------------
+  
+  
   
