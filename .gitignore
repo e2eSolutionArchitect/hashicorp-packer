@@ -2,3 +2,5 @@
 # example.tfvars
 *.tfvars
 *.pkrvars.hcl
+*.box
+*-ebs
