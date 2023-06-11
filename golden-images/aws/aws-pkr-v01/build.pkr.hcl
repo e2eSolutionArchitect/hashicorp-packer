@@ -4,7 +4,7 @@
 build {
   name = "e2esa-packer-build"
   sources = [
-    "source.azure-arm.ubuntu"
+    "source.amazon-ebs.ubuntu"
   ]
   provisioner "shell" {
     environment_vars = [
@@ -24,8 +24,8 @@ build {
     ]
   }
 
-  //post-processor "vagrant" {}
-  //post-processor "compress" {}
+  post-processor "vagrant" {}
+  post-processor "compress" {}
 
 }
 
