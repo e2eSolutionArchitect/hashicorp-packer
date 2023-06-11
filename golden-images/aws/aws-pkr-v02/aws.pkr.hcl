@@ -6,7 +6,7 @@ source "amazon-ebs" "ubuntu" {
   instance_type = var.instance
   region        = var.region
   source_ami    = var.source_ami_ubuntu
-  ssh_username  = var.ssh_username
+  ssh_username  = var.ssh_username_ubuntu
 }
 
 source "amazon-ebs" "rhel" {
@@ -15,7 +15,7 @@ source "amazon-ebs" "rhel" {
   instance_type = var.instance
   region        = var.region
   source_ami    = var.source_ami_rhel
-  ssh_username  = var.ssh_username
+  ssh_username  = var.ssh_username_rhel
 }
 
 source "amazon-ebs" "win" {

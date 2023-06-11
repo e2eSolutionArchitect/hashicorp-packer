@@ -51,7 +51,10 @@ variable source_ami_rhel {
 variable ami_name_win {
   type = string
 }
-variable ssh_username_win {
+variable winrm_username {
+  type = string
+}
+variable winrm_password {
   type = string
 }
 variable source_ami_win {
