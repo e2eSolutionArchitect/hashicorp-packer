@@ -1,4 +1,7 @@
 
+**About this project:** 
+This packer project is to build images for Ubuntu and Win11 in Azure cloud.
+
 Packer installation and configuration [clic here](https://github.com/e2eSolutionArchitect/hashicorp-packer/blob/main/README.md)
 
 - Rename the file 'values_pkrvars.hcl' to 'values.pkrvars.hcl' 
