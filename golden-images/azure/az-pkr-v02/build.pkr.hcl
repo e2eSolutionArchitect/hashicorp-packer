@@ -20,14 +20,14 @@ build {
       "sudo ufw allow proto tcp from any to any port 22,80,443",
       "echo 'y' | sudo ufw enable",
       "echo \"Variable value is $TEMP\" > demo.txt"
-      ]
+    ]
   }
 }
 
 
 build {
   name = "e2esa-packer-win-build"
-    sources = [
+  sources = [
     "source.azure-arm.win11"
   ]
 }
@@ -35,7 +35,7 @@ build {
 
 build {
   name = "e2esa-packer-rhel-build"
-    sources = [
+  sources = [
     "source.azure-arm.rhel"
   ]
 }

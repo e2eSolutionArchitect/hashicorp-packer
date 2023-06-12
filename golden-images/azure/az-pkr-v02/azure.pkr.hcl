@@ -24,9 +24,9 @@ source "azure-arm" "ubuntu" {
   managed_image_resource_group_name = var.resource_group_name
   managed_image_name                = "${var.image_name}-${var.image_version}"
   //---------------------
-    os_type         = "Linux"
+  os_type         = "Linux"
   image_publisher = "Canonical"
-image_offer     = "UbuntuServer"
+  image_offer     = "UbuntuServer"
   image_sku       = var.image_sku_ubuntu
 
   location = var.location
@@ -86,8 +86,8 @@ source "azure-arm" "rhel" {
   managed_image_name                = "${var.image_name_rhel}-${var.image_version_rhel}"
 
   os_type         = "Linux"
-  image_publisher = "RedHat" 
-  image_offer     = "RHEL" 
+  image_publisher = "RedHat"
+  image_offer     = "RHEL"
   image_sku       = var.image_sku_rhel
 
   location = var.location
