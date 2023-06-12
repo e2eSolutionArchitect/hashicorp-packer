@@ -1,3 +1,5 @@
+
+# Common
 variable "client_id" {
   type        = string
   description = "Azure Service Principal App ID."
@@ -22,32 +24,67 @@ variable "tenant_id" {
   sensitive   = true
 }
 
+
+variable resource_group_name {
+  type = string
+}
+
+
+
+# Ubuntu
+variable primary_location {
+  type = string
+}
+variable image_name {
+  type = string
+}
+variable image_version {
+  type = string
+  validation {
+    condition     = length(var.image_version) > 4 && substr(var.image_version, 0, 4) == "2023"
+    error_message = "The image_version value must be a valid image_version, starting with \"year-\"."
+  }
+}
+
+variable storage_account {
+  type = string
+}
+variable image_sku {
+  type = string
+}
+variable capture_name_prefix {
+  type = string
+}
+variable location {
+  type = string
+}
+variable vm_size {
+  type = string
+}
+
+
+# Windows 11
 variable "artifacts_resource_group" {
   type        = string
   description = "Packer Artifacts Resource Group."
 }
 
-variable "build_resource_group" {
-  type        = string
-  description = "Packer Build Resource Group."
-}
-
-variable "source_image_publisher" {
+variable "image_publisher_win11" {
   type        = string
   description = "Windows Image Publisher."
 }
 
-variable "source_image_offer" {
+variable "image_offer_win11" {
   type        = string
   description = "Windows Image Offer."
 }
 
-variable "source_image_sku" {
+variable "image_sku_win11" {
   type        = string
   description = "Windows Image SKU."
 }
 
-variable "source_image_version" {
+variable "image_version_win11" {
   type        = string
   description = "Windows Image Version."
 }
