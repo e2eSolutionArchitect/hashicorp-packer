@@ -1,4 +1,4 @@
-source "azure-arm" "avd" {
+source "azure-arm" "win11" {
   # WinRM Communicator
 
   communicator   = "winrm"

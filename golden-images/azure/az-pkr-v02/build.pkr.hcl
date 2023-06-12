@@ -1,3 +1,3 @@
 build {
-  source "azure-arm.avd" {}
+  source "azure-arm.win11" {}
 }
