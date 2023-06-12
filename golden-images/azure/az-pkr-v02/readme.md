@@ -1,6 +1,6 @@
 
 **About this project:** 
-This packer project is to build images for Ubuntu and Win11 in Azure cloud.
+This packer project is to build images for Ubuntu, RHEL and Win11 in Azure cloud.
 
 Packer installation and configuration [clic here](https://github.com/e2eSolutionArchitect/hashicorp-packer/blob/main/README.md)
 
