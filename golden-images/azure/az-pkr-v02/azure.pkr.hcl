@@ -24,10 +24,10 @@ source "azure-arm" "ubuntu" {
   managed_image_resource_group_name = var.resource_group_name
   managed_image_name                = "${var.image_name}-${var.image_version}"
   //---------------------
-  os_type         = "Linux"
+    os_type         = "Linux"
   image_publisher = "Canonical"
-  image_offer     = "UbuntuServer"
-  image_sku       = var.image_sku
+image_offer     = "UbuntuServer"
+  image_sku       = var.image_sku_ubuntu
 
   location = var.location
   vm_size  = var.vm_size
@@ -72,4 +72,29 @@ source "azure-arm" "win11" {
 
   build_resource_group_name = var.resource_group_name
   vm_size                   = var.vm_size
+}
+
+
+
+source "azure-arm" "rhel" {
+  client_id       = var.client_id
+  subscription_id = var.subscription_id
+  client_secret   = var.client_secret
+  tenant_id       = var.tenant_id
+
+  managed_image_resource_group_name = var.resource_group_name
+  managed_image_name                = "${var.image_name_rhel}-${var.image_version_rhel}"
+
+  os_type         = "Linux"
+  image_publisher = "RedHat" 
+  image_offer     = "RHEL" 
+  image_sku       = var.image_sku_rhel
+
+  location = var.location
+  vm_size  = var.vm_size
+  azure_tags = {
+    project = "e2esademo"
+  }
+
+
 }

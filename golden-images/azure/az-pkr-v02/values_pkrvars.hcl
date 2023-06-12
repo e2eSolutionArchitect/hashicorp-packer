@@ -26,4 +26,7 @@ source_image_version="latest"
 build_resource_group ="packer-demo"
 artifacts_resource_group ="packer-demo"
 
-
+# RHEL
+image_name_rhel           = "e2esa-pkr-rhel"
+image_version_rhel        = "20230609-01"
+image_sku_rhel  ="8-lvm-gen2" 

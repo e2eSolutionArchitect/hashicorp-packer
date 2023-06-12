@@ -32,9 +32,7 @@ variable resource_group_name {
 
 
 # Ubuntu
-variable primary_location {
-  type = string
-}
+
 variable image_name {
   type = string
 }
@@ -45,13 +43,15 @@ variable image_version {
     error_message = "The image_version value must be a valid image_version, starting with \"year-\"."
   }
 }
+variable image_sku_ubuntu {
+  type = string
+}
+
 
 variable storage_account {
   type = string
 }
-variable image_sku {
-  type = string
-}
+
 variable capture_name_prefix {
   type = string
 }
@@ -87,4 +87,17 @@ variable "image_sku_win11" {
 variable "image_version_win11" {
   type        = string
   description = "Windows Image Version."
+}
+
+
+# RHEL
+
+variable image_name_rhel {
+  type = string
+}
+variable image_version_rhel {
+  type = string
+}
+variable image_sku_rhel {
+  type = string
 }
