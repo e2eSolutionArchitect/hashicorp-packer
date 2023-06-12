@@ -31,3 +31,5 @@ az vm image list --publisher MicrosoftWindowsServer --all --output table
 ```
 az vm image list --publisher RedHat --all --output table
 ```
+
+find Azure images [click here](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/cli-ps-findimage)
