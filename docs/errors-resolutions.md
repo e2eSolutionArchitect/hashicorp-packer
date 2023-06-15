@@ -39,7 +39,8 @@ Navigate as following instruction
   The Shared Gallery Image 'packer' to which to publish the managed image version to does not exist in the resource group 'packer-demo' or does not contain managed image 'az-packer-v01-20230615211536'
   
   ```
-  As it says two probable reasons. 
-  - the image galler or Azure computer gallery doesn't exist under the resource group
-  - the base/parent image you are reffering, doesn't exist in that image gallery.  It may happen that when you created the base image (which you are refering as parent image now) didn't store in image gallery. 
+  First two components has to be created. Otherwise you will get error that gallery is not under respurce group 
+- Image gallery  
+- Image definition 
+  
   ```
