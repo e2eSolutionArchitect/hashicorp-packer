@@ -6,6 +6,4 @@ source "googlecompute" "ubuntu" {
   zone         = var.zone
 }
 
-build {
-  sources = ["sources.googlecompute.ubuntu"]
-}
+
