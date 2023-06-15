@@ -23,7 +23,10 @@ variable "tenant_id" {
   description = "Azure Tenant ID."
   sensitive   = true
 }
-variable az_region {
+variable az_region_useast {
+  type = string
+}
+variable az_region_uswest {
   type = string
 }
 

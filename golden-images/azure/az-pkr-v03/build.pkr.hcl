@@ -2,8 +2,8 @@
 
 build {
     hcp_packer_registry {
-    bucket_name = "ubuntu16-nginx"
-    description = "Ubuntu 16.04-LTS image."
+    bucket_name = "ubuntu18-nginx"
+    description = "Ubuntu 18.04-LTS image."
     bucket_labels = {
       "owner"          = var.owner
       "department"     = var.department
@@ -18,7 +18,8 @@ build {
 
   name = "e2esa-packer-linux-build"
   sources = [
-    "source.azure-arm.ubuntu"
+    "source.azure-arm.ubuntu18-useast",
+    "source.azure-arm.ubuntu18-uswest"
   ]
 
     # cloud-init to complete
@@ -27,22 +28,27 @@ build {
   }
 
   provisioner "shell" {
-    environment_vars = [
-      "TEMP=hello world",
-    ]
     execute_command = local.execute_command
     inline = [
-      "echo Installing nginx",
-      "sleep 30",
       "sudo apt-get update",
-      "sudo apt-get install nginx -y",
-      "sudo systemctl enable nginx",
-      "sudo systemctl start nginx",
       "echo 'Adding firewall rule...'",
       "sudo ufw allow proto tcp from any to any port 22,80,443",
-      "echo 'y' | sudo ufw enable",
-      "echo \"Variable value is $TEMP\" > demo.txt"
+      "echo 'y' | sudo ufw enable"
     ]
   }
 }
 
+
+
+    //     inline = [
+    //   "echo Installing nginx",
+    //   "sleep 30",
+    //   "sudo apt-get update",
+    //   "sudo apt-get install nginx -y",
+    //   "sudo systemctl enable nginx",
+    //   "sudo systemctl start nginx",
+    //   "echo 'Adding firewall rule...'",
+    //   "sudo ufw allow proto tcp from any to any port 22,80,443",
+    //   "echo 'y' | sudo ufw enable",
+    //   "echo \"Variable value is $TEMP\" > demo.txt"
+    // ]
