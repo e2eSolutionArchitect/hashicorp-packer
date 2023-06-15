@@ -30,6 +30,12 @@ variable az_region_uswest {
   type = string
 }
 
+
+variable az_regions {
+  type = list(string)
+  default     = ["East US"]
+}
+
 variable resource_group_name {
   type = string
 }

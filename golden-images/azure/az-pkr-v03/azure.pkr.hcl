@@ -1,4 +1,10 @@
 
+
+# Note: 
+# - Using DR stratery for the images. the same image build will be in multiple regions
+# - If 'shared_image_gallery_destination' is used then multiple source block copy is not required. "replication_regions": ["regionA", "regionB", "regionC"] will do the task
+# - HCP Packer has been used in build to register images in HCP Packer registry 
+
 source "azure-arm" "ubuntu18-useast" {
   client_id       = var.client_id
   subscription_id = var.subscription_id

@@ -1,6 +1,7 @@
 
 
 build {
+
     hcp_packer_registry {
     bucket_name = "ubuntu18-nginx"
     description = "Ubuntu 18.04-LTS image."
