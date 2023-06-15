@@ -28,10 +28,11 @@ Navigate as following instruction
   apt-get not supported for RHEL. 
   
   ## Resolution:  
-  
+  ```
   The apt-get command only works on Debian, Ubuntu, and its derivatives. If you are trying to install rpm-based operating systems such as Fedora, RHEL and CentOS, the command will not work. As a result, you will receive the error.
 
   Distributions such as Fedora, CentOS, and RHEL use Yum as their default package manager. Type in the following command to install them using Yum –
+  ```
   ----------------
   
   ## Error:
