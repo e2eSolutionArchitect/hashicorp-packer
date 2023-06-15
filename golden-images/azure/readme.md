@@ -47,7 +47,7 @@ A web browser has been opened at https://login.microsoftonline.com/organizations
 packer build -var-file="values.pkrvars.hcl" .
 ```
 
-## Configure your localpacker with HCP Packer 
+## Configure your local Packer with HCP Packer 
 Please [refer here](https://developer.hashicorp.com/packer/tutorials/hcp-get-started/hcp-push-image-metadata)
 - Assuming you have a 'packer registry' created. Or simply create a 'free registry'
 - In Access control (IAM) menu create a Service Principal. under that SP create key. it will generate Client ID and Secret ID. Copy these two ids. 
