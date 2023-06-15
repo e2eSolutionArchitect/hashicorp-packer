@@ -25,6 +25,7 @@ source "azure-arm" "ubuntu" {
   vm_size  = var.vm_size
   azure_tags = {
     project = "e2esademo"
+    build-time = local.timestamp
   }
 
 
