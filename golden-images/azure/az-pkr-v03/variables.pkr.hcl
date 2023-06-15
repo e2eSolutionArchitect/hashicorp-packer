@@ -1,0 +1,66 @@
+
+# Common
+variable "client_id" {
+  type        = string
+  description = "Azure Service Principal App ID."
+  sensitive   = true
+}
+
+variable "client_secret" {
+  type        = string
+  description = "Azure Service Principal Secret."
+  sensitive   = true
+}
+
+variable "subscription_id" {
+  type        = string
+  description = "Azure Subscription ID."
+  sensitive   = true
+}
+
+variable "tenant_id" {
+  type        = string
+  description = "Azure Tenant ID."
+  sensitive   = true
+}
+variable az_region {
+  type = string
+}
+
+variable resource_group_name {
+  type = string
+}
+
+variable owner {
+  type = string
+}
+
+variable department {
+  type = string
+}
+
+# Ubuntu
+
+variable image_name {
+  type = string
+}
+variable image_version {
+  type = string
+}
+variable image_sku_ubuntu {
+  type = string
+}
+
+
+variable storage_account {
+  type = string
+}
+
+variable capture_name_prefix {
+  type = string
+}
+
+variable vm_size {
+  type = string
+}
+
