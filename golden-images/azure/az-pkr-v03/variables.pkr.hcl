@@ -29,11 +29,24 @@ variable az_region_useast {
 variable az_region_uswest {
   type = string
 }
+variable az_region_parent_img {
+  type = string
+}
+variable pkr_bucket_name {
+  type = string
+}
+variable cloud_provider {
+  type = string
+}
 
+variable channel {
+  type    = string
+  default = "latest"
+}
 
 variable az_regions {
-  type = list(string)
-  default     = ["East US"]
+  type    = list(string)
+  default = ["East US"]
 }
 
 variable resource_group_name {
@@ -73,3 +86,10 @@ variable vm_size {
   type = string
 }
 
+
+variable az_image_gallery {
+  type = string
+}
+variable az_gallery_img_def_name {
+  type = string
+}
