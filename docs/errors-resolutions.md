@@ -44,3 +44,9 @@ Navigate as following instruction
 - Image definition 
   
   ```
+
+## Warning
+In packer registry under packer bucket it shows the warning that "The latest iteration of this image is sourced from a parent iteration that is no longer published to the linked channel."
+```
+todo
+```
