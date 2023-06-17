@@ -3,9 +3,14 @@
 #https://developer.hashicorp.com/packer/plugins/builders/googlecompute
 build {
   name = "e2esa-packer-build"
-  sources = [
-    "source.googlecompute.ubuntu"
-  ]
+  // sources = [
+  //   "source.googlecompute.ubuntu"
+  // ]
+  source "source.googlecompute.ubuntu" {
+    name     = "central-build"
+    zone         = "us-central1-a"
+    image_name = "packer-central-${local.date}"
+  }
   provisioner "shell" {
     environment_vars = [
       "TEMP=hello world",

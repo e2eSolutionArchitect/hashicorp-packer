@@ -61,10 +61,6 @@ variable department {
   type = string
 }
 
-variable az_gallery_img_def_name {
-  type = string
-}
-
 # Ubuntu
 
 variable image_name {
@@ -92,5 +88,8 @@ variable vm_size {
 
 
 variable az_image_gallery {
+  type = string
+}
+variable az_gallery_img_def_name {
   type = string
 }

@@ -28,6 +28,10 @@ variable source_ami_ubuntu {
   }
 }
 
+variable ami_regions {
+  type = list(string)
+}
+
 
 
 # RHEL

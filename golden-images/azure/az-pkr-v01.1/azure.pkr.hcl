@@ -24,7 +24,7 @@ Two components has to be created. Otherwise you will get error that gallery is n
   shared_image_gallery_destination {
     resource_group       = var.resource_group_name
     gallery_name         = var.az_image_gallery
-    image_name           = "ubuntu22"
+    image_name           = var.az_gallery_img_def_name
     image_version        = formatdate("YYYY.MMDD.hhmm", timestamp())
     replication_regions  = var.az_regions
     storage_account_type = "Standard_LRS"

@@ -17,7 +17,7 @@ source "azure-arm" "ubuntu22" {
 
 
   managed_image_resource_group_name = var.resource_group_name
-  managed_image_name                = "${var.image_name}-${local.timestamp}"
+  managed_image_name                = "${var.image_name}-${var.image_version}-${local.timestamp}"
 
   custom_managed_image_resource_group_name = data.hcp-packer-image.ubuntu22-nginx.labels.managed_image_resourcegroup_name
   custom_managed_image_name                = data.hcp-packer-image.ubuntu22-nginx.labels.managed_image_name
