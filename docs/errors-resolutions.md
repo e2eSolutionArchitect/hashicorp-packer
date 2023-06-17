@@ -48,5 +48,10 @@ Navigate as following instruction
 ## Warning
 In packer registry under packer bucket it shows the warning that "The latest iteration of this image is sourced from a parent iteration that is no longer published to the linked channel."
 ```
-todo
+It means the parent/base image which you child image inherits , is not assigned to any release channel.
+Solution is , create a channel under your image bucket . suppose 'base' channel. and assign your base image version with 'base' channel.
+
+NOTE: your base image means the image which doesn't have a parent. if you consider an image as a base , support 'img1' but ultimately the image 'img1' was created from a parent image 'img0'. Then packer will find if 'img0' was assigned to any channel or not.
+
+In summary, first ever base/parent image should be assigned to a channel. 
 ```
