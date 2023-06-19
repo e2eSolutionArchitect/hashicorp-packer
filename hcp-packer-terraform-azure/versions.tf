@@ -1,4 +1,11 @@
 terraform {
+  cloud {
+    organization = "e2esolutionarchitect"
+
+    workspaces {
+      name = "e2esa-ws-packer-cli"
+    }
+  }
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
@@ -25,4 +32,7 @@ provider "azurerm" {
 
   #It's also possible to configure Terraform to use a specific Subscription - for example:
   #subscription_id = "00000000-0000-0000-0000-000000000000"
+}
+
+provider "hcp" {
 }
