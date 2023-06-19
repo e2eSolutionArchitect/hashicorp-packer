@@ -25,7 +25,7 @@ terraform-docs markdown table . > tf-spec.md
 ```
 
 ## Terraform Cloud configuration
-(click here](https://github.com/e2eSolutionArchitect/terraform/blob/main/terraform-cloud.md)
+[click here](https://github.com/e2eSolutionArchitect/terraform/blob/main/terraform-cloud.md)
 
 
 ## Notes
