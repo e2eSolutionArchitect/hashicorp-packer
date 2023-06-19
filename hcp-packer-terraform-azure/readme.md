@@ -24,7 +24,11 @@ browse inside your terraform project directory and run the below command
 terraform-docs markdown table . > tf-spec.md
 ```
 
+## Terraform Cloud configuration
+(click here](https://github.com/e2eSolutionArchitect/terraform/blob/main/terraform-cloud.md)
+
+
 ## Notes
-- Please check repository https://github.com/e2eSolutionArchitect/terraform
-- We encourage you to contribute your knowledge with us and create a stronger IT community.
+- Please check the repository https://github.com/e2eSolutionArchitect/terraform
+- We encourage you to contribute your knowledge to us and create a stronger IT community.
 
