@@ -27,6 +27,22 @@ terraform-docs markdown table . > tf-spec.md
 ## Terraform Cloud configuration
 [click here](https://github.com/e2eSolutionArchitect/terraform/blob/main/terraform-cloud.md)
 
+Please make sure following configuration in Terraform Cloud
+- A Service  Principal has been created and added as environment variables (HCP_CLIENT_ID, HCP_CLIENT_SECRET) in Terraform Cloud in particular workspace under variables.
+- Azure connection credentials added  as environment variables (ARM_CLIENT_ID, ARM_CLIENT_SECRET, ARM_TENANT_ID, ARM_SUBSCRIPTION_ID) in Terraform Cloud in that particular workspace under variables.
+
+### While initiating run from CLI and connecting TF Cloud
+```
+terraform init
+
+# login will open up a browser and will take you to create a token in TF Cloud portal. If youhave the token already created just enter the token in the CLI prompt and it will show connected successfully.
+terraform login  
+
+terraform apply -var-file="app.tfvars" -auto-approve
+```
+
+
+
 ## Configure your local Packer with HCP Packer 
 Please [refer here](https://developer.hashicorp.com/packer/tutorials/hcp-get-started/hcp-push-image-metadata)
 - Assuming you have a 'packer registry' created. Or simply create a 'free registry'
