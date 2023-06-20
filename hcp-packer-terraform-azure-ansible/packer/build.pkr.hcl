@@ -22,20 +22,19 @@ build {
     "source.azure-arm.ubuntu22" 
   ]
 
-  provisioner "ansible-local" {
-    playbook_file = "../ansible/playbook.yml"
-  }
-
-  /*
   # Install Ansible
   provisioner "shell" {
     script= "../scripts/ansible.sh"
   }
 
+  provisioner "ansible-local" {
+    playbook_file = "../ansible/playbook.yml"
+  }
+
   provisioner "shell" {
     script= "../scripts/cleanup.sh"
   }
-  */
+  
 
 }
 

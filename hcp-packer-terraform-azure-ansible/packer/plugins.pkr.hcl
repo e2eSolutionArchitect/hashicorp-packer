@@ -5,5 +5,9 @@ packer {
       version = ">= 1.4.2"
       source  = "github.com/hashicorp/azure"
     }
+   /* ansible = {
+      version = ">= 1.1.0"
+      source  = "github.com/hashicorp/ansible"
+    }*/
   }
 }
