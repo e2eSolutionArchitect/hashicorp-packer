@@ -13,9 +13,14 @@ packer {
       version = ">= 1.1.1"
       source  = "github.com/hashicorp/googlecompute"
     }
-    // docker = {
-    //   version = "1.0.8"
-    //   source  = "github.com/hashicorp/docker"
-    // }    
+   /* docker = {
+      version = "1.0.8"
+      source  = "github.com/hashicorp/docker"
+     }
+    vsphere = {
+      source  = "hashicorp/vsphere"
+      version = "2.0.2"
+    }
+    */    
   }
 }
