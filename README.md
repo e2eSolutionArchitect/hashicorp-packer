@@ -3,6 +3,7 @@
 
 [![e2esa-bootcamp-posters-01](https://github.com/e2eSolutionArchitect/terraform/assets/62712515/485d9a63-da4b-4308-853d-cca3a5334e89)](https://e2esolutionarchitect.eventbrite.ca)
 
+[HCP Packer playlist](https://www.youtube.com/playlist?list=PLuBBTh-4TzDmBCdqJUeuRDtiTiBlOlT36)
 
 ***[Click here](https://e2esolutionarchitect.eventbrite.ca)*** for list of upcoming trainings.
 
