@@ -3,11 +3,13 @@
 This project is maintained by '[end-to-end Solution Architect](https://e2esolutionarchitect.com/)'. Please feel free to drop a note to contactus@e2eSolutionArchitect.com for any queries
 
 ## Permission
-end-to-end Solution Architect forum is contributing this as knowledge sharing. You are free to use and modify this.
+end-to-end Solution Architect forum is contributing to this as knowledge sharing. You are free to use and modify this.
 
 ## About the project
+HCP Packer image builder for multi-cloud environments. 
 
-add architecture diagram of application
+## Architecture design
+<img width="1424" alt="image" src="https://github.com/e2eSolutionArchitect/hcp-packer-image-builder-pipeline/assets/62712515/782e60f2-b247-4b2e-9cd6-fcdccc717c3c">
 
 Rename app_tfvars file name to app.tfvars and then execute  the below command
 ```
