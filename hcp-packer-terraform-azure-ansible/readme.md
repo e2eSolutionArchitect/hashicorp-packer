@@ -2,6 +2,10 @@
 **About this project:** 
 This packer project is to build images for Ubuntu in Azure cloud and configure using Ansible. Use Terraform Cloud for VM creation after packer build. 
 
+
+## Architecture design
+<img width="1424" alt="image" src="https://github.com/e2eSolutionArchitect/hcp-packer-image-builder-pipeline/assets/62712515/782e60f2-b247-4b2e-9cd6-fcdccc717c3c">
+
 Packer installation and configuration [clic here](https://github.com/e2eSolutionArchitect/hashicorp-packer/blob/main/README.md)
 
 - Rename the file 'values_pkrvars.hcl' to 'values.pkrvars.hcl' 
