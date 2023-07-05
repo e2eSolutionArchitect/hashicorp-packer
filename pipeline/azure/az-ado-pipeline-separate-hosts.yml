@@ -6,7 +6,7 @@ trigger:
 # By default or without mentioning dependsOn: [] makes it sequential. 
 # Pipeline will start 'kickoff' first. on successful completion, it will invoke 'build-image-azure' and 'build-image-aws' stages in PARALLEL. after completion of these two it will call 'endstage'.
 
-#pool:
+#pool: # common pool for all stages
 #  vmImage: 'ubuntu-latest'
 
 stages:
