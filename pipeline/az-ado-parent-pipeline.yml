@@ -2,6 +2,7 @@ name: ImageBuilderPipelineParent
 
 trigger: none
 
+# It will trigger child pipelines sequentially. Not in parallel. Check parallel pipeline approach in other file
 resources:
   pipelines:
   - pipeline: child-pipeline-01   # Name of the child pipeline resource
