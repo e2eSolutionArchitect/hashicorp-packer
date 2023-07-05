@@ -1,0 +1,44 @@
+trigger:
+- main
+
+# This pipeline will invoke stages based on 'dependsOn'. Jobs under each stage will invoke separate pipeline yml. 
+# dependsOn: [] makes it parallel. as the empty [] says no dependency. 
+# By default or without mentioning dependsOn: [] makes it sequential. 
+# Pipeline will start 'kickoff' first. on successful completion, it will invoke 'build-image-azure' and 'build-image-aws' stages in PARALLEL. after completion of these two it will call 'endstage'.
+
+#pool:
+#  vmImage: 'ubuntu-latest'
+
+stages:
+- stage: kickoff
+  pool:
+  vmImage: 'ubuntu-latest'
+  jobs: 
+  - job: kickoff-job
+    steps:
+    - script: echo 'Starting Unified pipeline'
+- stage: build-image-azure
+  pool:
+  vmImage: 'windows-latest'
+  dependsOn: kickoff
+  jobs: 
+  - job: azure-build
+    steps:
+    - script: echo 'Starting Azure Image builder pipeline'
+    - template: image-builder-azure-child.yml
+- stage: build-image-aws
+  pool:
+  vmImage: 'ubuntu-latest'
+  dependsOn: kickoff
+  jobs: 
+  - job: aws-build
+    steps:
+    - script: echo 'Starting AWS Image builder pipeline'
+    - template: image-builder-aws-child.yml
+- stage: endstage
+  pool:
+  vmImage: 'ubuntu-latest'
+  jobs: 
+  - job: end-job
+    steps:
+    - script: echo 'Pipelines completed successfully'
