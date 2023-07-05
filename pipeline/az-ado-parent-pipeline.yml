@@ -5,15 +5,15 @@ trigger: none
 resources:
   pipelines:
   - pipeline: child-pipeline-01   # Name of the child pipeline resource
-    source: ImageBuilderAzureChild01 # Name of the pipeline referenced by the pipeline resource
+    source: image-builder-azure # Name of the child pipeline
     project: ImageBuilderAzure # Required only if the source pipeline is in another project
     trigger: true # enabled the pipeline trigger
   - pipeline: child-pipeline-02   
-    source: ImageBuilderAWSChild01 
+    source: image-builder-aws 
     project: ImageBuilderAWS 
     trigger: true
   - pipeline: child-pipeline-03   
-    source: ImageBuilderGCPChild01 
+    source: image-builder-gcp 
     project: ImageBuilderGCP 
     trigger: true 
 
