@@ -4,6 +4,7 @@ trigger:
 # This pipeline will invoke stages based on 'dependsOn'. Jobs under each stage will invoke separate pipeline yml. 
 # dependsOn: [] makes it parallel. as the empty [] says no dependency. 
 # By default or without mentioning dependsOn: [] makes it sequential. 
+# Pipeline will start 'kickoff' first. on successful completion, it will invoke 'build-image-azure' and 'build-image-aws' stages in PARALLEL. after completion of these two it will call 'endstage'.
 pool:
   vmImage: 'ubuntu-latest'
 
