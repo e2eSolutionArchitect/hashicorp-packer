@@ -1,0 +1,10 @@
+name: image-builder-azure
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: echo 'Image builder pipeline for Azure image'
