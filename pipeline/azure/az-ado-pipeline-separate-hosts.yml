@@ -12,7 +12,7 @@ trigger:
 stages:
 - stage: kickoff
   pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'ubuntu-latest' # defining separate pool for a particular stage
   jobs: 
   - job: kickoff-job
     steps:
