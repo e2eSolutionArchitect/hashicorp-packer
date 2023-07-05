@@ -1,0 +1,22 @@
+trigger:
+- main
+
+# This pipeline will invoke both stages in parallel. Jobs under each stage will invoke separate pipeline yml. dependsOn: [] makes it parallel. as the empty [] says no dependency. 
+# By default or without mentioning dependsOn: [] makes it sequential. 
+pool:
+  vmImage: 'ubuntu-latest'
+
+stages:
+- stage: build-image-azure
+  jobs: 
+  - job: azure-build
+    steps:
+    - script: echo 'Starting Azure Image builder pipeline'
+    - template: image-builder-azure-child.yml
+- stage: build-image-aws
+  dependsOn: []
+  jobs: 
+  - job: aws-build
+    steps:
+    - script: echo 'Starting AWS Image builder pipeline'
+    - template: image-builder-aws-child.yml
