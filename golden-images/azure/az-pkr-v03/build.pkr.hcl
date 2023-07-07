@@ -19,7 +19,7 @@ build {
 
   name = "e2esa-packer-linux-build"
   sources = [
-    "source.azure-arm.ubuntu22" 
+    "source.azure-arm.ubuntu22"
   ]
 
   # cloud-init to complete
