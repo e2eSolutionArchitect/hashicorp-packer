@@ -20,6 +20,14 @@ variable pkr_bucket_name_rhel9_aws {
   type = string
 }
 
+variable owner {
+  type = string
+}
+
+variable department {
+  type = string
+}
+
 # Ubuntu 
 
 variable ami_name_ubuntu {

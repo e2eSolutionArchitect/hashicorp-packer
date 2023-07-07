@@ -17,7 +17,8 @@ ssh_username_rhel = "ec2-user"
 ami_name_rhel   = "e2esa-aws-rhel-golden"
 source_ami_rhel = "ami-026ebd4cfe2c043b2" # Red Hat Enterprise Linux 9 (HVM), SSD Volume Type
 
-
+owner      = "e2esa"
+department = "education"
 
 # Windows
 /*
