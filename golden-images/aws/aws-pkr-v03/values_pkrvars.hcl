@@ -6,6 +6,9 @@ instance     = "t2.medium"
 pkr_bucket_name_ubuntu2204_aws ="ubuntu22-nginx-aws"
 pkr_bucket_name_rhel9_aws ="rhel9-nginx-aws"
 
+owner      = "e2esa"
+department = "education"
+
 # Ubuntu
 ssh_username_ubuntu = "ubuntu"
 ami_name_ubuntu   = "e2esa-aws-ubuntu-golden"
@@ -27,4 +30,3 @@ winrm_password ="SuperS3cr3t!!!!"
 ami_name_win   = "e2esa-aws-win-golden"
 source_ami_win = "ami-0d86c69530d0a048e" # Microsoft Windows Server 2022 Full Locale English AMI provided by Amazon
 */
-
