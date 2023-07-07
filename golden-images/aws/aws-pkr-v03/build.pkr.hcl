@@ -1,6 +1,4 @@
 
-
-
 build {
   hcp_packer_registry {
     bucket_name = var.pkr_bucket_name_ubuntu2204_aws
@@ -54,8 +52,8 @@ build {
     bucket_labels = {
       "owner"          = var.owner
       "department"     = var.department
-      "os"             = "Ubuntu",
-      "ubuntu-version" = "22_04-lts",
+      "os"             = "Linux",
+      "ubuntu-version" = "RHEL9",
       "app"            = "nginx",
     }
     build_labels = {
