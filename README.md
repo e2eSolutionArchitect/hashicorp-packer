@@ -7,6 +7,8 @@
 
 ***[Click here](https://e2esolutionarchitect.eventbrite.ca)*** for list of upcoming trainings.
 
+[![HELPLINE](https://github.com/e2eSolutionArchitect/academy/assets/8308302/3b85acaf-50f5-4a4f-850d-46216de108af)](Helpline)(https://e2esolutionarchitect.com/helpline/)
+
 ### Join the ***Slack*** channel 
  - [Terraform Infrastructure Automation Engineering](https://talentdevelop-u8d3237.slack.com/archives/C04KCD8183B)
 
